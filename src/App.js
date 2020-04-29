@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Sidetab from "./components/Sidetab/Sidetab";
+import Maintab from "./components/Maintab/Maintab";
+import { connect } from "react-redux";
+import StartModal from "./components/StartModal/StartModal";
+import SecondModal from "./components/SecondModal/SecondModal";
+import MainContent from "./components/MainContent/MainContent";
+import PeopleModalOne from "./components/PeopleModalOne/PeopleModalOne";
+import PeopleModalTwo from "./components/PeopleModalTwo/PeopleModalTwo";
+import AddPeople from "./components/AddPeople/AddPeople";
+import DefaultBody from "./components/DefaultBody/DefaultBody";
+import PeopleBody2 from "./components/PeopleBody2/PeopleBody2";
 
-function App() {
+const App = ({ curNav, peopleDone }) => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidetab />
+      <div className="main-content">
+        <Maintab page={curNav} />
+        {curNav === "Campaigns" ? (
+          <MainContent />
+        ) : curNav !== "People" ? (
+          <DefaultBody />
+        ) : peopleDone ? (
+          <PeopleBody2 />
+        ) : (
+          <DefaultBody />
+        )}
+      </div>
+
+      <StartModal />
+      <SecondModal />
+      <PeopleModalOne />
+      <PeopleModalTwo />
+      <AddPeople />
     </div>
   );
-}
+};
 
-export default App;
+const mapStateToProps = (state) => ({
+  curNav: state.navigation.currentNav,
+  peopleDone: state.navigation.peopleDone,
+});
+
+export default connect(mapStateToProps)(App);

@@ -1,0 +1,35 @@
+.add-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+
+.add-form label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.add-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-form input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.17);
+  background: #ffffff;
+  border-radius: 4px;
+  width: 432px;
+  height: 42px;
+}
+
+button {
+  border: none;
+}

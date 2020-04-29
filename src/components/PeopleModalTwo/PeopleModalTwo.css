@@ -1,0 +1,78 @@
+.people-modal-two-progressBar {
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr 1fr 10fr;
+  justify-content: center;
+  margin-top: 30px;
+  background: #c4c4c4;
+  height: 72px;
+  align-items: center;
+  position: relative;
+}
+
+.active-step {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.inactive-step {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #575757;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  width: 158px;
+  border: 1px solid #ff006e;
+}
+
+.people-modal-two-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people-modal-two__para1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #575757;
+  margin-top: 67px;
+}
+
+.people-modal-two__para2 {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #7c7c7c;
+  margin-bottom: 40px;
+}
+
+.people-submit-btn {
+  position: absolute;
+  right: 60px;
+  bottom: 34px;
+  width: 122px;
+  height: 42px;
+  background: #ff006e;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}

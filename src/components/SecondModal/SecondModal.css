@@ -1,0 +1,21 @@
+.modal-two-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+
+  text-align: center;
+}
+
+/* .vertical-seperator {
+  border: 0.5px solid #c4c4c4;
+  transform: rotate(90deg);
+  position: relative;
+  width: 80%;
+  height: 80%;
+} */
+
+.vertical-seperator {
+  width: 40%;
+  border-right: 1px solid #c4c4c4;
+}

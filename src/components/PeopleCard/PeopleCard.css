@@ -1,0 +1,19 @@
+.people-card {
+  display: flex;
+}
+
+.name-field {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 33px;
+}
+
+.field {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7c7c7c;
+}

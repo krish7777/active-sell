@@ -1,0 +1,73 @@
+.sidetab {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  width: 154px;
+  height: 70px;
+  margin-top: 15px;
+  /* margin-bottom: 50px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo2 {
+  width: 100%;
+}
+
+.navOptions {
+  height: 30vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.navOptions div {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  column-gap: 33px;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-btn {
+  fill: #7c7c7c;
+  color: #7c7c7c;
+}
+
+.side-btn_active {
+  fill: #3a86ff;
+  color: #3a86ff;
+}
+
+.navOptions div > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.lastButton {
+  height: 50px;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastButton div {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  column-gap: 33px;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lastButton div > svg {
+  width: 100%;
+  height: 100%;
+}

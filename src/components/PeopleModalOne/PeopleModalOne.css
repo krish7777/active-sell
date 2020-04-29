@@ -1,0 +1,14 @@
+.people-modal-one-heading {
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #626262;
+}
+
+.people-modal-svg {
+  transform: translateX(50px);
+}
